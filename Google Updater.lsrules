@@ -1,0 +1,20 @@
+{
+  "description" : "",
+  "name" : "Google Updater",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "80",
+      "process" : "\/Users\/chris\/Library\/Application Support\/Google\/GoogleUpdater\/*\/GoogleUpdater.app",
+      "protocol" : "tcp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Users\/chris\/Library\/Application Support\/Google\/GoogleUpdater\/*\/GoogleUpdater.app",
+      "protocol" : "udp",
+      "remote" : "any"
+    }
+  ]
+}

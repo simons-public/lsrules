@@ -1,0 +1,53 @@
+{
+  "description" : "Rules for allowing Backblaze (backblaze.com) backups.",
+  "name" : "Backblaze",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Backblaze.app\/Contents\/MacOS\/bzserv",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Library\/Backblaze.bzpkg\/bztrans_thread00",
+      "protocol" : "tcp",
+      "remote-domains" : "backblaze.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Library\/Backblaze.bzpkg\/bztrans_thread01",
+      "protocol" : "tcp",
+      "remote-domains" : "backblaze.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Library\/Backblaze.bzpkg\/bztrans_thread02",
+      "protocol" : "tcp",
+      "remote-domains" : "backblaze.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Library\/Backblaze.bzpkg\/bztrans_thread03",
+      "protocol" : "tcp",
+      "remote-domains" : "backblaze.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Library\/Backblaze.bzpkg\/bztransmit",
+      "protocol" : "tcp",
+      "remote-domains" : "backblaze.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Library\/Backblaze.bzpkg\/bztransmit",
+      "protocol" : "tcp",
+      "remote-domains" : "backblazeb2.com"
+    }
+  ]
+}
